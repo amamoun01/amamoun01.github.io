@@ -14,7 +14,7 @@
 **Ingénieur Cloud & DevOps**  
 :material-map-marker: Antibes, France
 
-Je suis un ingénieur Cloud & DevOps, spécialisé dans la conception de systèmes évolutifs, automatisés et résilients. J’accompagne les équipes d’ingénierie dans le déploiement et l’exploitation fiable de leurs applications dans des plateformes Cloud (**Kubernetes**, **Cloud Foundry**), l’automatisation **CI/CD**, l’infrastructure as code et l’observabilité en production.
+Je suis un ingénieur Cloud & DevOps, spécialisé dans la conception de systèmes évolutifs, automatisés et résilients. J’accompagne les équipes d’ingénierie dans le déploiement et l’exploitation fiable de leurs applications dans des plateformes Cloud (**Kubernetes**, **Cloud Foundry**), l’automatisation **CI/CD**, l’Infrastructure as Code et l’observabilité en production.
 
 J’aime transformer les tâches opérationnelles répétitives en outils et workflows fiables afin d’aider les équipes à livrer plus rapidement, à réduire les risques et à exploiter leurs services avec confiance.
 

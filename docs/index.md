@@ -14,7 +14,7 @@
 **Cloud & DevOps Engineer**  
 :material-map-marker: Antibes, France
 
-I am a a Cloud & DevOps Engineer focused on building scalable, automated and resilient systems. I help engineering teams deploy and operate applications reliably through Cloud platforms (**Kubernetes**, **Cloud Foundry**), **CI/CD** automation, infrastructure as code and production observability.
+I am a a Cloud & DevOps Engineer focused on building scalable, automated and resilient systems. I help engineering teams deploy and operate applications reliably through Cloud platforms (**Kubernetes**, **Cloud Foundry**), **CI/CD** automation, Infrastructure as Code and production observability.
 
 I enjoy transforming repetitive operational tasks into dependable tools and workflows that help teams deliver faster, reduce risk and operate their services with confidence.
 

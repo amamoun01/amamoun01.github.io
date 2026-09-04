@@ -30,9 +30,9 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 
-font:
-  text: Roboto
-  code: Fira Code
+  font:
+    text: Roboto
+    code: Fira Code
   
 nav:
   - Home: index.md
@@ -59,6 +59,9 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - scripts/portfolio-pdf.js
 
 plugins:
   - search
