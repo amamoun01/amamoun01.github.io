@@ -71,6 +71,17 @@ instance/
 # Sphinx documentation
 docs/_build/
 
+# Generated documentation site and local PDF output
+site/
+
+# Node dependencies and local tooling
+node_modules/
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.tgz
+
 # PyBuilder
 .pybuilder/
 target/
@@ -166,6 +177,7 @@ venv.bak/
 
 # mkdocs documentation
 /site
+docs/assets/pdf/*.pdf
 
 # mypy
 .mypy_cache/

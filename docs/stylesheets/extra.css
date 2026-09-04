@@ -17,18 +17,6 @@
   margin-right: 0.45rem;
 }
 
-/* Mobile Responsiveness for Profile Image */
-@media screen and (max-width: 768px) {
-    .profile-image-float {
-        float: none;
-        display: block;
-        margin: 0 auto 30px auto;
-    }
-    h1 {
-        text-align: center;
-    }
-}
-
 /* Custom Tech Tags (Matches your resume aesthetic) */
 .tech-tag {
     display: inline-block;
@@ -72,81 +60,11 @@
     overflow: hidden;
     white-space: nowrap;
     border-right: 3px solid #00ff00;
-    animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+  animation: typing 3s steps(40, end) forwards, blink-caret .75s step-end infinite;
 }
 
 @keyframes typing { from { width: 0 } to { width: 100% } }
 @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: #00ff00; } }
-
-/* Mobile Responsiveness */
-@media screen and (max-width: 768px) {
-    .profile-wrapper {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-    .profile-text .social-links {
-        justify-content: center;
-    }
-}
-
-/* Modern Stack Badges to replace img.shields */
-.stack-badge {
-    display: inline-block;
-    padding: 8px 18px;
-    margin: 5px 8px 10px 0;
-    border-radius: 8px;
-    background-color: var(--md-default-bg-color);
-    border: 1px solid var(--md-default-fg-color--lighter);
-    color: var(--md-default-fg-color) !important;
-    font-weight: 600;
-    font-size: 0.9rem;
-    font-family: 'Fira Code', monospace;
-    box-shadow: var(--md-shadow-z1);
-    transition: all 0.3s ease;
-    text-decoration: none;
-}
-
-.stack-badge:hover {
-    box-shadow: var(--md-shadow-z2);
-    border-color: var(--md-primary-fg-color);
-    color: var(--md-primary-fg-color) !important;
-    transform: translateY(-2px);
-}
-
-.stack-badge .twemoji {
-    vertical-align: middle;
-    margin-right: 6px;
-    height: 1.2em;
-    width: 1.2em;
-}
-
-/* Modern Tech Chips for Grid Cards */
-.tech-chip {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 4px 10px;
-    margin: 4px 4px 4px 0;
-    border-radius: 6px;
-    background-color: var(--md-default-bg-color);
-    border: 1px solid var(--md-default-fg-color--lighter);
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: var(--md-default-fg-color);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    transition: all 0.2s ease;
-}
-
-.tech-chip:hover {
-    background-color: var(--md-primary-fg-color--transparent);
-    border-color: var(--md-primary-fg-color);
-    transform: translateY(-1px);
-}
-
-.tech-chip .twemoji {
-    height: 1.2em;
-    width: 1.2em;
-}
 
 .tech-tags img {
   height: 28px;
@@ -182,23 +100,17 @@
     letter-spacing: -0.02em;
 }
 
-.profile-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-}
-
-.profile-wrapper .profile-text {
-    flex: 1;
-}
-
-.profile-wrapper .profile-image img {
-    width: 240px;
-    border-radius: 20px;
-    box-shadow: var(--md-shadow-z3);
-}
-
 @media screen and (max-width: 768px) {
+  .profile-image-float {
+    float: none;
+    display: block;
+    margin: 0 auto 30px auto;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
     .typing-effect {
         white-space: normal;
         border-right: 0;
@@ -207,14 +119,6 @@
 
     .terminal-box {
         overflow-x: auto;
-    }
-
-    .profile-wrapper {
-        gap: 1.5rem;
-    }
-
-    .profile-wrapper .profile-image img {
-        width: 190px;
     }
 }
 
@@ -272,4 +176,92 @@ img[src*="img.shields.io"] {
   font-size: 0.85em;
   opacity: 0.8;
   text-align: right;
+}
+
+/* =========================================================
+   Portfolio PDF download button
+   ========================================================= */
+
+.portfolio-pdf-button {
+  position: fixed;
+  right: 1.4rem;
+  bottom: 1.4rem;
+  z-index: 20;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 3.25rem;
+  height: 3.25rem;
+
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+
+  color: var(--md-primary-bg-color);
+  background: var(--md-primary-fg-color);
+
+  cursor: pointer;
+
+  box-shadow:
+    0 4px 12px rgb(0 0 0 / 18%),
+    0 2px 4px rgb(0 0 0 / 12%);
+
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    opacity 160ms ease;
+}
+
+.portfolio-pdf-button svg {
+  width: 1.45rem;
+  height: 1.45rem;
+
+  fill: currentcolor;
+}
+
+.portfolio-pdf-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 7px 18px rgb(0 0 0 / 22%),
+    0 3px 6px rgb(0 0 0 / 15%);
+}
+
+.portfolio-pdf-button:active {
+  transform: translateY(0);
+}
+
+.portfolio-pdf-button:focus-visible {
+  outline: 3px solid var(--md-accent-fg-color);
+  outline-offset: 3px;
+}
+
+.portfolio-pdf-button:disabled {
+  cursor: wait;
+  opacity: 0.8;
+}
+
+/* Slightly smaller on mobile */
+
+@media screen and (max-width: 44.9844em) {
+  .portfolio-pdf-button {
+    right: 1rem;
+    bottom: 1rem;
+
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+
+/*
+ * Never include the floating button itself
+ * when printing directly from a portfolio page.
+ */
+@media print {
+  .portfolio-pdf-button {
+    display: none !important;
+  }
 }
